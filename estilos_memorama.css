@@ -1,0 +1,249 @@
+body{
+	background-color: #0c0c0c;
+	padding: 0px;
+	margin: 0px;
+}
+
+#contenedor{
+	width:1581px;
+	height: 1015px;
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	margin-top: -507px;
+  	margin-left: -790px;
+}
+
+/*Estilos de la pantalla de inicio*/
+
+#pantalla_inicio{
+	width:1421px;
+	height:898px;
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	margin-top: -449px;
+  	margin-left: -710px;
+  	background-image: url('Imágenes/inicio/memo-03.png');
+  	text-align: center;
+  	visibility: hidden;
+}
+
+#pantalla_inicio *{	position: absolute;	}
+
+#saludo{
+	width: 612px;
+	height: 445px;
+	left: 65px;
+	background-image: url('Imágenes/inicio/memo-02.png');
+}
+
+#input_nombre{
+	width:242px;
+	height: 40px;
+	border-radius: 25px;
+	text-align: center;
+	font-size: 30px;
+	left: 97px;
+	top:190px;
+	font-family:Arial,sans-serif;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.nivel{
+	margin-left: -80px;
+	transition: transform .5s;
+	-webkit-transition: -webkit-transform .5s;
+	-moz-transition: -moz-tranform .5s;
+	-o-transition: -o-transform .5s;
+	-ms-transition: -ms-transform .5s;
+}
+
+#facil{	top:245px;	}
+
+#normal{ top:440px;	}
+
+#mounstro{	top:635px;	}
+
+.nivel:hover{
+	transform:scale(1.1);
+	-webkit-transform:scale(1.1);
+	-moz-transform:scale(1.1);
+	-o-transform:scale(1.1);
+	-ms-transform:scale(1.1);
+}
+
+/*Estilos de la pantalla de partida*/
+
+#pantalla_partida{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image:url('Imágenes/memo-06.png');
+	visibility: hidden;
+}
+
+#fondo_info{   position: absolute;	}
+
+#imagenes_info{
+	position: absolute;
+	left: 70px;
+	top: 90px;
+}
+
+#imagenes_info img{	display: block;	}
+
+#info{
+	position:absolute;
+	left: 70px;
+	top: 125px;
+}
+
+#info p{
+	width: 315px;
+	height: 50px;
+	margin-bottom: 85px;
+	text-align: center;
+	font-family:Arial,sans-serif;
+	font-weight: bold;
+	font-size: 38px;
+}
+
+#seccion_juego{
+	position: absolute;
+	width: 1138px;
+	height: 100%;
+	left:443px;
+}
+
+#tablero{
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+}
+
+#tabla_cartas{	margin: auto;	}
+
+.carta_frente1,.carta_frente2{
+	transform-style: preserve-3d;
+}
+
+.carta_frente1:hover,.carta_frente2:hover{
+	transform:scale(1.05);
+}
+
+.carta_frente1{
+	width:163px;
+	height:226px;
+}
+
+.carta_frente2{
+	width: 131px;
+	height: 181px;
+}
+
+.carta_atras1,.carta_atras2{
+	width:100%;
+	height:100%;
+	backface-visibility: hidden;
+}
+
+.carta_atras1{
+	background-image: url('Imágenes/cartas facil/memo-43.png');
+}
+
+.carta_atras2{
+	background-image: url('Imágenes/cartas normal/memo-24.png');
+}
+
+/*Estilos de la pantalla de resultado*/
+
+#pantalla_resultado{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	opacity: 0;
+	visibility: hidden;
+}
+
+#transparencia{
+	width: 100%;
+	height: 100%;
+	opacity: .8;
+	background-color:black;
+	position: absolute;
+}
+
+#transparencia div{
+	position: absolute;
+	width: 930px;
+	height: 685px;
+	border-radius: 100px;
+	background-color: white;
+	opacity: .5;
+	top: 50%;
+  	left: 50%;
+  	margin-top: -342px;
+  	margin-left: -465px;
+}
+
+#fondo_resultado{
+	position: relative;
+	top:200px;
+}
+
+#info_resultado{
+	text-align: left;
+	position: absolute;
+	left:845px;
+	top:260px;
+}
+
+#info_resultado img:first-child{	margin-left: -25px;		}
+
+#info_resultado img{	display: block;		}
+
+#fondo_nombre{	margin-top:-10px;	}
+
+#nombre{
+	position: absolute;
+	width: 315px;
+	height: 50px;
+	text-align: center;
+	font-family:Arial,sans-serif;
+	font-weight: bold;
+	font-size: 38px;
+	top:24px;
+	left: -10px;
+}
+
+#etiqueta_resultado{
+	width:179px;
+	height: 50px;
+	margin-left: 5px;
+	margin-top:-5px;
+}
+
+#fondo_desc{	margin-top:-10px;	}
+
+#descripcion{
+	position: absolute;
+	width: 230px;
+	height: 240px;
+	margin-top:-267px;
+	margin-left: 38px;
+	text-align: center;
+	font:23px Arial;
+	font-weight: bold;
+}
+
+#regreso{
+	margin-top:-15px;
+	float: right;
+	opacity: .5;
+}
+
+#regreso:hover{
+	opacity: 1;
+}

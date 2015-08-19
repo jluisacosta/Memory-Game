@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="utf-8" />
+        <title>Memorama</title>
+        <link type="text/css" rel="stylesheet" href="estilos_memorama.css">
+        <script type="text/javascript" src="js_memorama.js"></script>
+    </head>
+    <body onload="body_onload()">
+        <div id="contenedor">
+            <div id="pantalla_inicio">
+                <div id="saludo">
+                    <input id="input_nombre" type="text" name="txtNombre"/>
+                </div>
+                <img class="nivel" id="facil" src="Imágenes/inicio/memo-04.png" onmouseover="nivel_onmouseover(this)" onclick="nivel_onclick(this)"/>
+                <img class="nivel" id="normal" src="Imágenes/inicio/memo-08.png" onmouseover="nivel_onmouseover(this)" onclick="nivel_onclick(this)"/>
+                <img class="nivel" id="mounstro" src="Imágenes/inicio/memo-09.png" onmouseover="nivel_onmouseover(this)" onclick="nivel_onclick(this)"/>
+            </div>
+            <div id="pantalla_partida">
+                <img id="fondo_info" src="Imágenes/tablero/memo-05.png"/>
+                <div id="imagenes_info">
+                    <img src="Imágenes/tablero/memo-21.png"/>
+                    <img src="Imágenes/tablero/memo-12.png"/>
+                    <img src="Imágenes/tablero/memo-10.png"/>
+                    <img src="Imágenes/tablero/memo-13.png"/>
+                    <img src="Imágenes/tablero/memo-11.png"/>
+                    <img src="Imágenes/tablero/memo-14.png"/>
+                </div>
+                <div id="info">
+                    <p id="jugador"></p>
+                    <p id="nivel"></p>
+                    <p id="crono">00:00</p>
+                </div>
+                <div id="seccion_juego">
+                    <div id="tablero"></div>
+                </div>
+            </div>
+            <div id="pantalla_resultado">
+                <div id="transparencia">
+                    <div></div>
+                </div>
+                <img id="fondo_resultado" src="Imágenes/resultado/memo-16.png"/>
+                <div id="info_resultado">
+                    <img src="Imágenes/resultado/result-21.png"/>
+                    <img id="fondo_nombre"src="Imágenes/resultado/memo-22.png"/>
+                    <div id="etiqueta_resultado"></div>
+                    <img id="fondo_desc"src="Imágenes/resultado/memo-01.png"/>
+                    <img id="regreso" src="Imágenes/resultado/memo-17.png" onclick="regreso_onclick()"/>
+                    <p id="nombre"></p>
+                    <p id="descripcion"></p>
+                </div>
+            </div>
+        </div>
+    </body> 
+</html>
